@@ -27,4 +27,7 @@ fun main() {
     for(valor in values){
         println(valor)
     }
+    println("----------")//valores que serão impressos 0,1,4,9,16
+    val asc = Array(5) { i -> (i * i).toString() }
+    asc.forEach { println(it) }
 }
