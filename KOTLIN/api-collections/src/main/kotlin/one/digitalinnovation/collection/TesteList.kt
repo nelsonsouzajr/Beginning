@@ -8,7 +8,15 @@ fun main() {
     val funcionarios = listOf(joao, jose, maria)
     funcionarios.forEach { println(it) }
 
+    println("----------")
     println(funcionarios.find { it.nome == "José" })
+
+    println("---------")
+    funcionarios
+            .sortedBy { it.salario}
+            .forEach{ println(it) }
+
+
 }
 
 data class funcionario(
